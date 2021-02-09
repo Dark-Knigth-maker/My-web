@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: #1b262c;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+/* Loader */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.loader {
+    background: #252525;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    clip-path: circle(150% at 100% 0);
+    transition: clip-path 3s ease-in-out;
+}
+.loader2 {
+    clip-path: circle(0% at 100% 0);
+}
+.loader h1{
+    color: #fff;
+    position: absolute;
+    top: 60%;
+}
+/* Nav */
+
+.nav__responsive-ul {
+    display: none;
+}
+
+#nav__ul {
+    position: absolute;
+    background: #252525;
+    display: inline-block;
+    height: 70vh;
+    width: 20%;
+    padding-top: 14%;
+    padding-left: 10px;
+    font-size: 20px;
+    list-style: none;
+    left: -200px;
+    transition: all 0.5s linear;
+}
+
+#nav__ul.active {
+    left: 0;
+}
+
+.nav__li {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.nav__li:hover {
+    padding: 30px;
+    background: #222;
+    font-weight:900;
+    font-size: 20px;
+    transition: all 0.5s linear;
+}
+
+
+.nav__li a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
+
+.nav__icon-btn {
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    animation: movimiento__icon 1s linear infinite;
+}
+
+@keyframes movimiento__icon {
+    0% {
+        top: 25px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    #nav__ul {
+        display: none;
+    }
+
+    #nav__responsive-ul {
+        position: absolute;
+        display: inline-block;
+        background: #252525;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        left: -400px;
+        transition: all 1s ease-in-out;
+    }
+
+    #nav__responsive-ul.active {
+        left: 0;
+    }
+
+    .nav__responsive-li {
+        padding-top: 40px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .nav__responsive-li a {
+        color: #fff;
+        list-style: none;
+    }
+
+    .nav__responsive-li:hover{
+        color: #00af91;
+    }
+    .nav__responsive-li a:hover {
+        color: #00af91;
+    }
+
+    .nav__responsive-button {
+        position: fixed;
+        font-size: 35px;
+        right: 15px;
+        top: 10px;
+        z-index: 50;
+    }
+}
+
+/* Texto */
+.introduce {
+    position: relative;
+    left: 200px;
+    top: 50vh;
+    display: inline-block;
+    z-index: -1;
+}
+
+.introduce__name b {
+    color: #007965;
+    font-size: 60px;
+    border-bottom: 3px solid #c6ebc9;
+}
+
+.introduce__description {
+    margin-top: 30px;
+}
+
+.introduce__logo {
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 550px;
+    top: -175px;
+}
+
+/* Social */
+.social{
+    position: absolute;
+    display:inline-block;
+    right: 10px;
+    top: 45vh;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.social ul {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Copy */
+.copyright {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 10px;
+    font-size: 10px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Knigth Contact</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="contact.css">
+    <!-- Fonts -->
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = Lato: ital, wght @ 1,900 & display = intercambiar "rel =" hoja de estilo ">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Vista en moviles -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+<!-- Loader -->
+<div class="lds-ring loader" id="loader">
+    <h1>Loading...</h1>
+    <div></div><div></div><div></div><div></div>
+    </div>
+<!-- Nav -->
+<header>
+    <nav class="nav">
+        <div class="nav__main">
+            <ul id="nav__ul">
+                <span class="nav__icon-btn">&#9776</span>
+                <li class="nav__li"><i class="fas fa-laptop-code"></i><a href="proyects.html">Projects</a></li>
+                <li class="nav__li"><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+                <li class="nav__li"><i class="fas fa-info-circle"></i><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <ul class="nav__responsive-ul" id="nav__responsive-ul">
+            <div class="nav__responsive-button">
+                <div class="fas fa-bars"></div>
+            </div>
+                
+            <div class="nav__li-container">
+                <li class="nav__responsive-li"><i class="fas fa-laptop-code"></i><a href="proyects.html">Proyects</a></li>
+                <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+                <li class="nav__responsive-li"><i class="fas fa-info-circle"></i><a href="contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<!-- form -->
+
+<div class="form">
+    <section class="contact__info">
+        <section class="info__title">
+            <span class="fa fa-user-circle"></span>
+            <h2>Contact info</h2>
+        </section>
+        <section class="info__items">
+            <p><span class="fab fa-twitter-square"></span> @Dark_Knigth_28</p>
+            <p><span class="fab fa-instagram-square"></span> ...</p>
+        </section>
+    </section>
+    <form action="enviar.php" method="POST" class="form__contact">
+        <h2>Send a message</h2>
+        <div class="form__user-info">
+            <label for="names">Name</label>
+            <input type="text" id="names" name="names" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send message" id="btnSend">
+        </div>
+    </form>
+</div>
+    
+
+<!-- social -->
+<div class="social">
+    <ul>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="https://discord.gg/ymPj9qM2p2"><i class="fab fa-discord"></i></a></li>
+    </ul>   
+</div>
+<!-- footer -->
+<div class="footer">
+    <footer>
+        <div class="footer__social">
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://discord.gg/ymPj9qM2p2"><i class="fab fa-discord"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Designed by Dark Knight <i class="far fa-copyright"></i></p>
+        </div>
+    </footer>
+</div>
+<script src="main.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
