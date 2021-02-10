@@ -12,6 +12,10 @@ body {
     color: white;
 }
 
+.footer__responsive-social {
+    display: none;
+}
+
 /* Loader */
 .lds-ring {
     display: inline-block;
@@ -378,6 +382,10 @@ form.form__contact input[type="submit"]:hover {
 }
 
 @media (max-width: 500px) {
+
+    .footer__social {
+        display: none;
+    }
     .form {
         position: absolute;
         left: 0;
