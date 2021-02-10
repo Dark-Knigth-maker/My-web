@@ -405,4 +405,16 @@ form.form__contact input[type="submit"]:hover {
     form.form__contact input[type="submit"] {
         align-self: center;
     }
+
+    .footer__responsive-social {
+        position: absolute;
+        display: inline-block;
+        left: 90px;
+        bottom: 120px;
+    }
+    .footer__responsive-social i {
+        font-size: 50px;
+        color: #fff;
+        padding-right: 20px;
+    }
 }
