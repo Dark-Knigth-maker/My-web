@@ -11,6 +11,14 @@ body {
     color: white;
 }
 
+.introduce__responsive {
+    display: none;
+}
+
+.social__responsive {
+    display: none;
+}
+
 /* Loader */
 .lds-ring {
     display: inline-block;
@@ -240,4 +248,61 @@ body {
     right: 10px;
     bottom: 10px;
     font-size: 10px;
+}
+
+@media (max-width: 500px) {
+    
+    .introduce {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .introduce__responsive {
+        position: relative;
+        left: 70px;
+        top: 25vh;
+        display: inline-block;
+        z-index: -1;
+    }
+
+    .introduce__responsive-name {
+        font-size: 25px;
+    }
+
+    .introduce__responsive-name b {
+        color: #007965;
+        font-size: 40px;
+        border-bottom: 3px solid #c6ebc9;
+    }
+
+    .introduce__responsive-description {
+        padding-top: 25px;
+    }
+
+    .introduce__responsive-logo {
+        display: inline-block;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        padding-top: 50px;
+    }
+
+    .social__responsive {
+        text-decoration: none;
+        position: absolute;
+        display: inline-block;
+        bottom: 25px;
+        left: 35%;
+
+        font-size: 35px;
+    }
+
+    .social__responsive a {
+        color: #fff;
+        padding-right: 10px;
+    }
+
 }
